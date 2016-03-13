@@ -24,18 +24,9 @@ Plugin documentation
 
 Input plugins:
 
-* input_file
+* input_testpicture
 * input_http
-* input_opencv ([documentation](plugins/input_opencv/README.md))
-* input_ptp2
-* input_raspicam ([documentation](plugins/input_raspicam/README.md))
-* input_uvc ([documentation](plugins/input_uvc/README.md))
 
 Output plugins:
 
-* output_file
 * output_http ([documentation](plugins/output_http/README.md))
-* output_rtsp
-* output_udp
-* output_viewer ([documentation](plugins/output_viewer/README.md))
-
