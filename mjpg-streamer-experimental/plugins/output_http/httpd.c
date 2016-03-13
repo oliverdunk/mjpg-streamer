@@ -51,9 +51,6 @@
 #define V4L2_CTRL_TYPE_STRING_SUPPORTED
 #endif
 
-#include "../output_file/output_file.h"
-
-
 static globals *pglobal;
 extern context servers[MAX_OUTPUT_PLUGINS];
 int piggy_fine = 2; // FIXME make it command line parameter
@@ -743,7 +740,6 @@ void *client_thread(void *arg)
             query_suffixed = 0;
         }
         #endif
-        #ifdef WXP_COMPAT
     } else if(strstr(buffer, "GET /?action=stream") != NULL) {
         req.type = A_STREAM;
         query_suffixed = 255;
@@ -755,7 +751,6 @@ void *client_thread(void *arg)
             query_suffixed = 0;
         }
         #endif
-        #ifdef WXP_COMPAT
     } else {
         req.type = A_STREAM;
         query_suffixed = 255;
@@ -767,7 +762,6 @@ void *client_thread(void *arg)
             query_suffixed = 0;
         }
         #endif
-        #ifdef WXP_COMPAT
     }
     
     close(lcfd.fd);
