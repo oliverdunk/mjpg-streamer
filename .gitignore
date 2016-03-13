@@ -15,5 +15,9 @@
 __pycache__
 *.pyc
 
+.DS_STORE
+/mjpg-streamer-experimental/MJPGStreamer.xcodeproj
+MJPGStreamer/MJPGStreamer.xcodeproj/
+
 /mjpg-streamer-experimental/mjpg_streamer
 /mjpg-streamer-experimental/_build
